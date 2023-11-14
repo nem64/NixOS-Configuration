@@ -26,14 +26,4 @@
         alsa.support32Bit = true;
         pulse.enable = true;
     };
-
-    hardware.opengl.driSupport32Bit = true;
-    hardware.opengl.driSupport = true;
-    hardware.opengl.extraPackages = with pkgs; [
-    amdvlk
-    ];
-    hardware.opengl.extraPackages32 = with pkgs; [
-    driversi686Linux.amdvlk
-    ];
-
 }
